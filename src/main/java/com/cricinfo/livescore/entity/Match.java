@@ -18,7 +18,7 @@ public class Match {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer matchId;
     private String teamHeading;
-    private String matchNUmberVenue;
+    private String matchNumberVenue;
     private String battingTeam;
     private String battingTeamScore;
     private String bowlTeam;
