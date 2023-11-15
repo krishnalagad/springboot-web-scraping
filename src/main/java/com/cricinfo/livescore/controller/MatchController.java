@@ -30,4 +30,10 @@ public class MatchController {
         List<Match> liveMatches = this.matchService.getLiveMatches();
         return ResponseEntity.ok(liveMatches);
     }
+
+    @GetMapping("/point-table")
+    public ResponseEntity<List<List<String>>> getPointTable() {
+        List<List<String>> pointTable = this.matchService.getPointTable();
+        return ResponseEntity.ok(pointTable);
+    }
 }
