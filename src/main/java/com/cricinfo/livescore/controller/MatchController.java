@@ -3,6 +3,7 @@ package com.cricinfo.livescore.controller;
 import com.cricinfo.livescore.entity.Match;
 import com.cricinfo.livescore.service.MatchService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/cric")
+@CrossOrigin("*")
 public class MatchController {
 
     private final MatchService matchService;
