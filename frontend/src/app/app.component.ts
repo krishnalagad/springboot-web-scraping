@@ -12,5 +12,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'frontend';
 
-  handleRefreshClick() {}
+  handleRefreshClick() {
+    window.location.reload();
+  }
 }
