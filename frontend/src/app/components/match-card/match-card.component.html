@@ -1,0 +1,26 @@
+<!-- {{match | json}} -->
+
+@if (match) {
+    <div class="hover:bg-blue-300 hover:border-b-green-800 transition-all rounded-xl cursor-pointer
+ border-b-blue-500 border-b-8 card border p-4 bg-white shadow-lg mt-2 h-full">
+  <div class="header border-b-2 pb-2 border-b-gray-200">
+    <h1 class="font-bold"> {{ match.teamHeading }} </h1>
+    <p class="text-gray-500">{{ match.matchNumberVenue }}</p>
+  </div>
+  <div class="body mt-4">
+    <div class="flex justify-between px-2">
+      <p class="font-bold">{{ match.battingTeam }}</p>
+      <p class="font-bold">{{ match.battingTeamScore }}</p>
+    </div>
+    <div class="flex justify-between px-2">
+      <p class="font-bold">{{ match.bowlTeam }}</p>
+      <p class="font-bold">{{ match.bowlTeamScore }}</p>
+    </div>
+  </div>
+  <div class="footer mt-3">
+    <p class="text-red-700">India has won the toss and elected to bat</p>
+    <p class="text-green-700">India has won the toss and elected to bat</p>
+  </div>
+</div>
+
+}

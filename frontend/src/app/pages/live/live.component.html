@@ -1,1 +1,15 @@
-<p>live works!</p>
+<div class="">
+  <h1 class="text-4xl font-extrabold text-gray-700">Live Cricket Score</h1>
+
+  <div class="items-stretch card-container flex-wrap flex-col md:flex-row flex">
+    @for (match of liveMatch; track $index) {
+    <div class="p-2 md:w-[25%] w-full">
+      <app-match-card [match]="match"></app-match-card>
+    </div>
+    } @empty {
+    <h1 class="text-4xl font-extrabold text-gray-700">
+      No live cricket match is going on right now
+    </h1>
+    }
+  </div>
+</div>
