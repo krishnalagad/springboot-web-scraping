@@ -12,11 +12,21 @@
             <a [routerLink]="'/history'" href="#" class="text-white hover:text-gray-200">History</a>
             <a [routerLink]="'/point-table'" href="#" class="text-white hover:text-gray-200">Points Table</a>
         </nav>
-        <div>
+        <!-- <div>
             <button class="text-white hover:text-gray-200 hover:font-bold ml-4 cursor-pointer" (click)="handleRefreshClick()">
                <a href="/live" class="hover:font-bold">Refresh</a>
                 &#x21bb;
             </button>
+        </div> -->
+        <div class="relative group">
+            <button class="text-white hover:text-gray-200 ml-4 cursor-pointer" (click)="handleRefreshClick()" data-tooltip="Refresh">
+                <!-- Add your refresh icon or text here -->
+                &#x21bb;
+            </button>
+            <!-- Tooltip Content -->
+            <div class="hidden group-hover:block absolute bg-gray-800 text-white text-xs px-2 py-1 mt-2 rounded">
+                Refresh
+            </div>
         </div>
     </div>
 </div>
